@@ -148,7 +148,9 @@ main > .announcements {
 
 ul.latest > li {
   display: grid;
-  align-items: center;
+  align-items: start;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
 }
 
 ul.latest > li.line {
