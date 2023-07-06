@@ -9,10 +9,12 @@
   <body>
     <div class="container">
       <nav>
-        <div class="logo">
-          <svg></svg>
-          <h1>Dashboard</h1>
-        </div>
+        <ul class="logo">
+          <li>
+            <svg></svg>
+            <h1>Dashboard</h1>
+          </li>
+        </ul>
         <ul class="links">
           <li>
             <svg></svg>
@@ -56,7 +58,9 @@
       </nav>
       <header>
         <div class="top">
-          <svg class="search"></svg>
+          <button>
+            <svg class="search"></svg>
+          </button>
           <input type="search" />
           <svg class="bell"></svg>
           <img src="" alt="" class="avatar-thumb" />
@@ -64,8 +68,10 @@
         </div>
         <div class="bottom">
           <img src="" alt="" class="avatar-big" />
-          <h3>Hi there,</h3>
-          <h1>Mike Ambrosino (@mikeya)</h1>
+          <div class="greeting">
+            <h3>Hi there,</h3>
+            <h1>Mike Ambrosino (@mikeya)</h1>
+          </div>
           <button>New</button>
           <button>Upload</button>
           <button>Share</button>
@@ -122,38 +128,53 @@
         </div>
         <div class="announcements">
           <h1>Announcements</h1>
-          <div class="latest">
-            <ul>
+            <ul class="latest">
               <li>
-                <h4></h4>
-                <p></p>
+                <h4>Site Maintenance</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
+                  quam consequatur ad fugit consequuntur et excepturi ratione
+                  vel debitis suscipit.
+                </p>
               </li>
+              <li class="line" aria-label="hidden"></li>
               <li>
-                <h4></h4>
-                <p></p>
+                <h4>Update Coming Soon</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium odio dicta quam enim natus?
+                </p>
               </li>
+              <li class="line" aria-label="hidden"></li>
               <li>
-                <h4></h4>
-                <p></p>
+                <h4>Account Growth 400%</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Deserunt, aliquid.
+                </p>
               </li>
             </ul>
-          </div>
         </div>
         <div class="trending">
+          <h1>Trending</h3>
           <ul class="accounts">
-            <li>
+            <li class="account">
+              <svg></svg>
               <h5>@tegan</h5>
               <p>World Peace Builder</p>
             </li>
-            <li>
+            <li class="account">
+              <svg></svg>
               <h5>@morgan</h5>
               <p>Super cool project</p>
             </li>
-            <li>
+            <li class="account">
+              <svg></svg>
               <h5>@kendall</h5>
               <p>Innovator and Disruptor</p>
             </li>
-            <li>
+            <li class="account">
+              <svg></svg>
               <h5>@romulus</h5>
               <p>Wayward failson</p>
             </li>
