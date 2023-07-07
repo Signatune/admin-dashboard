@@ -13,7 +13,6 @@ button {
   appearance: none;
 }
 
-/*REMOVE ONCE IMAGES ARE ADDED*/
 svg,
 img {
   height: 25px;
@@ -163,6 +162,10 @@ main {
   padding: 25px;
 }
 
+main svg {
+  fill: black;
+}
+
 main > .projects {
   grid-area: projects;
   display: grid;
@@ -205,6 +208,10 @@ p {
 
 .project-actions {
   justify-self: end;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, auto);
 }
 
 main > .announcements {
